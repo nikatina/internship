@@ -24,25 +24,19 @@ public class OpenbankCourseCheck_selenium {
     @Test
     public void dollarBuyMoreThanSale() {
 
-        String dollarBuy = driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[7]/section/div/div/div[1]/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]/div/span")).getText();
-        String dollarSale = driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[7]/section/div/div/div[1]/div/div/div/div/div[2]/table/tbody/tr[2]/td[4]/div/span")).getText();
+        double dollarBuy = Double.parseDouble(driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[7]/section/div/div/div[1]/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]/div/span")).getText().replace(",","."));
+        double dollarSale = Double.parseDouble(driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[7]/section/div/div/div[1]/div/div/div/div/div[2]/table/tbody/tr[2]/td[4]/div/span")).getText().replace(",","."));
 
-        float dBuy = Float.parseFloat(dollarBuy.replace(",","."));
-        float dSale = Float.parseFloat(dollarSale.replace(",","."));
-
-        Assert.assertFalse(dBuy  > dSale );
+        Assert.assertFalse(dollarBuy  > dollarSale );
     }
 
     @Test
     public void euroBuyMoreThanSale() {
 
-        String euroBuy = driver.findElement(By.cssSelector("tr:nth-child(3)>td:nth-child(2) span")).getText();
-        String euroSale = driver.findElement(By.cssSelector("tr:nth-child(3)>td:nth-child(4) span")).getText();
+        double euroBuy = Double.parseDouble(driver.findElement(By.cssSelector("tr:nth-child(3)>td:nth-child(2) span")).getText().replace(",","."));
+        double euroSale = Double.parseDouble(driver.findElement(By.cssSelector("tr:nth-child(3)>td:nth-child(4) span")).getText().replace(",","."));
 
-        double eBuy = Double.parseDouble(euroBuy.replace(",","."));
-        double eSale = Double.parseDouble(euroSale.replace(",","."));
-
-        Assert.assertFalse(eBuy > eSale );
+        Assert.assertFalse(euroBuy > euroSale );
     }
 
     @AfterClass
