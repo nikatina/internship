@@ -1,0 +1,204 @@
+[1597581681.468][INFO]: Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 5551
+[1597581681.468][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1597581681.795][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "D:\\Internship\\atmaven\\atmaven\\build\\downloads",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "D:\\Internship\\atmaven\\atmaven\\build\\downloads",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1597581681.798][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "D:\\Internship\\atmaven\\atmaven\\build\\downloads"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1597581681.800][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1597581681.802][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\nikat\AppData\Local\Temp\scoped_dir11620_941550399" data:,
+[1597581682.414][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1597581684.423][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1597581686.434][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "84.0.4147.125",
+      "chrome": {
+         "chromedriverVersion": "84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})",
+         "userDataDir": "C:\\Users\\nikat\\AppData\\Local\\Temp\\scoped_dir11620_941550399"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:55634"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "0917fce9e9464780de98e474a2404dac"
+}
+[1597581686.439][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1597581686.439][INFO]: Waiting for pending navigations...
+[1597581686.441][INFO]: Done waiting for pending navigations. Status: ok
+[1597581686.548][INFO]: Waiting for pending navigations...
+[1597581686.549][INFO]: Done waiting for pending navigations. Status: ok
+[1597581686.549][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 10,
+   "y": 10
+}
+[1597581686.551][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND Navigate {
+   "url": "http://demo.guru99.com/test/newtours/"
+}
+[1597581686.551][INFO]: Waiting for pending navigations...
+[1597581686.552][INFO]: Done waiting for pending navigations. Status: ok
+[1597581687.057][INFO]: Waiting for pending navigations...
+[1597581688.492][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.492][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE Navigate
+[1597581688.496][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND GetTitle {
+
+}
+[1597581688.496][INFO]: Waiting for pending navigations...
+[1597581688.497][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.504][INFO]: Waiting for pending navigations...
+[1597581688.508][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.508][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE GetTitle "Welcome: Mercury Tours"
+[1597581688.514][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id=\"site-name\"]/a"
+}
+[1597581688.514][INFO]: Waiting for pending navigations...
+[1597581688.516][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.548][INFO]: Waiting for pending navigations...
+[1597581688.550][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.550][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "811b3f16-0a7b-4470-812d-136e424eca59"
+}
+[1597581688.553][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND GetElementTagName {
+   "id": "811b3f16-0a7b-4470-812d-136e424eca59"
+}
+[1597581688.553][INFO]: Waiting for pending navigations...
+[1597581688.555][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.562][INFO]: Waiting for pending navigations...
+[1597581688.564][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.564][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE GetElementTagName "a"
+[1597581688.567][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND GetElementText {
+   "id": "811b3f16-0a7b-4470-812d-136e424eca59"
+}
+[1597581688.567][INFO]: Waiting for pending navigations...
+[1597581688.569][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.600][INFO]: Waiting for pending navigations...
+[1597581688.602][INFO]: Done waiting for pending navigations. Status: ok
+[1597581688.602][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE GetElementText "Demo Site"
+[1597581688.609][INFO]: [0917fce9e9464780de98e474a2404dac] COMMAND Quit {
+
+}
+[1597581688.727][INFO]: [0917fce9e9464780de98e474a2404dac] RESPONSE Quit
