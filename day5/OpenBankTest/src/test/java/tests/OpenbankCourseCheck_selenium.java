@@ -24,8 +24,8 @@ public class OpenbankCourseCheck_selenium {
     @Test
     public void dollarBuyMoreThanSale() {
 
-        double dollarBuy = Double.parseDouble(driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[7]/section/div/div/div[1]/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]/div/span")).getText().replace(",","."));
-        double dollarSale = Double.parseDouble(driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[7]/section/div/div/div[1]/div/div/div/div/div[2]/table/tbody/tr[2]/td[4]/div/span")).getText().replace(",","."));
+        double dollarBuy = Double.parseDouble(driver.findElement(By.cssSelector("tr:nth-child(2)>td:nth-child(2) span")).getText().replace(",","."));
+        double dollarSale = Double.parseDouble(driver.findElement(By.cssSelector("tr:nth-child(2)>td:nth-child(4) span")).getText().replace(",","."));
 
         Assert.assertFalse(dollarBuy  > dollarSale );
     }
