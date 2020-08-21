@@ -7,7 +7,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class vtbBankObmenTests {
     @Test
-    public void test200RurToDollar() {
+    public void test200RurToDollar() throws InterruptedException {
+        Thread.sleep(500);
         vtbBankPage vtbpage = open("https://www.vtb.ru/personal/platezhi-i-perevody/obmen-valjuty/", vtbBankPage.class);
         //vtbpage.close_cck();
         int rubles_count = 200;
@@ -20,7 +21,8 @@ public class vtbBankObmenTests {
     }
 
     @Test
-    public void test3MRurToDollar() {
+    public void test3MRurToDollar() throws InterruptedException {
+        Thread.sleep(500);
         vtbBankPage vtbpage = open("https://www.vtb.ru/personal/platezhi-i-perevody/obmen-valjuty/", vtbBankPage.class);
         //vtbpage.close_cck();
         int rubles_count = 3000000;
